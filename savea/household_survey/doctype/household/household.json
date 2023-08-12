@@ -107,8 +107,7 @@
   "f_1",
   "f_3",
   "column_break_84",
-  "f_2",
-  "amended_from"
+  "f_2"
  ],
  "fields": [
   {
@@ -779,21 +778,12 @@
    "fieldtype": "Select",
    "label": "F02. Did participating in the SET Project encourage you or your siblings to stay in school?",
    "options": "\nYes\nNo\nNo Answer"
-  },
-  {
-   "fieldname": "amended_from",
-   "fieldtype": "Link",
-   "label": "Amended From",
-   "no_copy": 1,
-   "options": "TVET Savea",
-   "print_hide": 1,
-   "read_only": 1
   }
  ],
  "hide_toolbar": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-08-12 16:20:17.443926",
+ "modified": "2023-08-12 18:09:37.797200",
  "modified_by": "Administrator",
  "module": "Household Survey",
  "name": "Household",

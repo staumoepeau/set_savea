@@ -21,16 +21,6 @@ frappe.ui.form.on('Search for Household', {
 		$('.primary-action').prop('hidden', true);
 		$('.btn-default').prop('hidden', true);
 
-//		frm.fields_dict.household_members.grid.get_field('parent').get_query = function(doc, cdt, cdn) {
-//			return {
-//				query: "kokanut.api.get_members_info",
-//				filters: {
-//					"client": frm.doc.household_id
-//				}
-//			}
-//		}
-
-
 		frm.add_custom_button(__('Edit'), () => {
 			frappe.route_options = {
 				"household_id": frm.doc.household_id,

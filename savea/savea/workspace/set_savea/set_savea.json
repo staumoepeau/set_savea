@@ -1,0 +1,161 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"0LpVDPbtxF\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">SET Savea</span>\",\"col\":12}},{\"id\":\"rw5idVaZKP\",\"type\":\"card\",\"data\":{\"card_name\":\"Household Savea\",\"col\":4}},{\"id\":\"vq1AzTWNwl\",\"type\":\"card\",\"data\":{\"card_name\":\"Evaulation Savea\",\"col\":4}},{\"id\":\"0zxdxf4Kyv\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Settings <br></b></span>\",\"col\":12}},{\"id\":\"OYDpwEj5yw\",\"type\":\"card\",\"data\":{\"card_name\":\"Education\",\"col\":4}},{\"id\":\"IB_X9RyonP\",\"type\":\"card\",\"data\":{\"card_name\":\"Islands Details\",\"col\":4}}]",
+ "creation": "2023-08-12 08:17:38.853831",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "solid-success",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "SET Savea",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Education",
+   "link_count": 3,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "School",
+   "link_count": 0,
+   "link_to": "School",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Academic Term",
+   "link_count": 0,
+   "link_to": "Academic Term",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Academic Year",
+   "link_count": 0,
+   "link_to": "Academic Year",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Islands Details",
+   "link_count": 3,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Island Division",
+   "link_count": 0,
+   "link_to": "Island Division",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "District",
+   "link_count": 0,
+   "link_to": "District",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Village",
+   "link_count": 0,
+   "link_to": "Village",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Evaulation Savea",
+   "link_count": 1,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Student Evaluation",
+   "link_count": 0,
+   "link_to": "Student Evaluation",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Household Savea",
+   "link_count": 3,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Search Household",
+   "link_count": 0,
+   "link_to": "Search for Household",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Household",
+   "link_count": 0,
+   "link_to": "Household",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Household Members",
+   "link_count": 0,
+   "link_to": "Household Members",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2023-08-12 17:58:35.254588",
+ "modified_by": "Administrator",
+ "module": "Savea",
+ "name": "SET Savea",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 23.0,
+ "shortcuts": [],
+ "title": "SET Savea"
+}
