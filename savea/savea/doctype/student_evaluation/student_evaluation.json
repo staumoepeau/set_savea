@@ -1,0 +1,319 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-08-11 19:07:32.757646",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "member_id",
+  "student_name",
+  "household_id",
+  "column_break_k5j5y",
+  "dob",
+  "gender",
+  "age",
+  "martial_status",
+  "section_break_1ia8w",
+  "island_division",
+  "column_break_9angl",
+  "district",
+  "column_break_kciaa",
+  "village",
+  "section_break_xq7zw",
+  "school",
+  "date_of_completing_form",
+  "semester_start",
+  "column_break_yxp5q",
+  "program_of_studies",
+  "semester_current",
+  "semester_end",
+  "section_break_snhiz",
+  "column_break_8",
+  "household_benefit",
+  "column_break_gzoih",
+  "how_many_benefiting",
+  "section_break_lblfu",
+  "partners",
+  "column_break_gki2j",
+  "q_15",
+  "section_break_pouz1",
+  "q_16",
+  "section_break_tlaxp",
+  "q_17",
+  "column_break_90pgh",
+  "q_18",
+  "section_break_e5tw7",
+  "q_19",
+  "column_break_cwvbi",
+  "q_20"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "TSSF.YY.MM.####"
+  },
+  {
+   "fetch_from": "member_id.gender",
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Gender",
+   "options": "\nMale\nFemale"
+  },
+  {
+   "fetch_from": "member_id.dob",
+   "fieldname": "dob",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date of Birth"
+  },
+  {
+   "description": "Age in completed years\n",
+   "fieldname": "age",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Age"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Tab Break",
+   "label": "SET Project Information"
+  },
+  {
+   "fieldname": "martial_status",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Martial Status ",
+   "options": "Martial Status"
+  },
+  {
+   "fetch_from": "member_id.school",
+   "fieldname": "school",
+   "fieldtype": "Link",
+   "label": "School",
+   "options": "School"
+  },
+  {
+   "fetch_from": "member_id.full_name",
+   "fieldname": "student_name",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Student Name"
+  },
+  {
+   "fieldname": "household_id",
+   "fieldtype": "Link",
+   "label": "Household ID",
+   "options": "Household"
+  },
+  {
+   "fieldname": "member_id",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Member ID",
+   "options": "Household Members"
+  },
+  {
+   "fieldname": "column_break_k5j5y",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_xq7zw",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_yxp5q",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "program_of_studies",
+   "fieldtype": "Data",
+   "label": "Program of Studies"
+  },
+  {
+   "fieldname": "section_break_1ia8w",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "island_division",
+   "fieldtype": "Link",
+   "label": "Island Division",
+   "options": "Island Division"
+  },
+  {
+   "fieldname": "column_break_9angl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "district",
+   "fieldtype": "Link",
+   "label": "District",
+   "options": "District"
+  },
+  {
+   "fieldname": "village",
+   "fieldtype": "Link",
+   "label": "Village",
+   "options": "Village"
+  },
+  {
+   "fieldname": "column_break_kciaa",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date_of_completing_form",
+   "fieldtype": "Date",
+   "label": "Date of completing form"
+  },
+  {
+   "fieldname": "section_break_snhiz",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "semester_start",
+   "fieldtype": "Link",
+   "label": "Semester/Term Your Program Started",
+   "options": "Academic Term"
+  },
+  {
+   "fieldname": "semester_current",
+   "fieldtype": "Link",
+   "label": "Semester/Term you currently enrolled",
+   "options": "Academic Term"
+  },
+  {
+   "fieldname": "semester_end",
+   "fieldtype": "Link",
+   "label": "Semester/Term your program of studies should be completed",
+   "options": "Academic Term"
+  },
+  {
+   "fieldname": "household_benefit",
+   "fieldtype": "Select",
+   "label": "Is your household a beneficiary of the SET Project?",
+   "options": "\nYES\nNO\nNOT SURE"
+  },
+  {
+   "fieldname": "column_break_gzoih",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "how_many_benefiting",
+   "fieldtype": "Data",
+   "label": "How many students are benefitting?"
+  },
+  {
+   "fieldname": "section_break_lblfu",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "partners",
+   "fieldtype": "Select",
+   "label": "Which of Tonga's development partners is funding the SET Project?",
+   "options": "\nMinistry of Internal Affairs\nGovernment of Tonga\nWorld Bank"
+  },
+  {
+   "fieldname": "column_break_gki2j",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "q_15",
+   "fieldtype": "Select",
+   "label": "Do you think this project benefits Tonga's poor, disadvantaged, and vulnerable families?",
+   "options": "\nYES\nNO\nNOT SURE"
+  },
+  {
+   "fieldname": "section_break_pouz1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "q_16",
+   "fieldtype": "Table MultiSelect",
+   "label": "What school related expenses that SET funding assist you with? Select all that apply",
+   "options": "School Related Expenses Table"
+  },
+  {
+   "fieldname": "section_break_tlaxp",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "q_17",
+   "fieldtype": "Select",
+   "label": "On an overall basis, are you satisfied with the TVET Student Support Fund?",
+   "options": "\nNO ANSWER\nUNSATISFACTORY\nMODERATELY SATISFACTORY\nSATISFACTORY\nHIGHLY SATISFACTORY"
+  },
+  {
+   "fieldname": "column_break_90pgh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "q_18",
+   "fieldtype": "Select",
+   "label": "This Program ends next year in 2023, do you think your parents can afford to pay for your fees to continue your pro",
+   "options": "\nMAYBE\nSURE CAN\nCANNOT AFFORD"
+  },
+  {
+   "fieldname": "section_break_e5tw7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "q_19",
+   "fieldtype": "Select",
+   "label": "What other assistance you wish the SET project funding could have helped with?",
+   "options": "\nPay for extra tutorials to help with my Internal Assessment\nPay for extra tutorials to help me prepare for exams.\nPay for engagement activities for students such as student camping activities.\nPay for counselors to work with the students.\nPay for extra-curricular activities such as painting lessons, piano lessons, etc."
+  },
+  {
+   "fieldname": "column_break_cwvbi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "q_20",
+   "fieldtype": "Text",
+   "label": "What was the most important lesson you learned from today\u2019s informational session?"
+  }
+ ],
+ "hide_toolbar": 1,
+ "links": [],
+ "modified": "2023-08-12 16:15:24.541449",
+ "modified_by": "Administrator",
+ "module": "Savea",
+ "name": "Student Evaluation",
+ "name_case": "Title Case",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_name_in_global_search": 1,
+ "show_preview_popup": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

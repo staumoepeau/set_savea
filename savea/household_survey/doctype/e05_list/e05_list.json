@@ -1,0 +1,93 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:situation",
+ "creation": "2022-09-24 01:29:10.247951",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "situation",
+  "e04",
+  "code"
+ ],
+ "fields": [
+  {
+   "fieldname": "situation",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Situation",
+   "unique": 1
+  },
+  {
+   "fieldname": "e04",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "E04",
+   "options": "\nAgriculture\nManufacturing\nConstruction\nWholesale & retail trade; repair of motor vehicles and motorcycles\nTransportation and storage\nAccommodation & food service activities\nPublic administration & defense\nEducation\nHealth & social work activities\nOther service activities\nActivities of households as employers"
+  },
+  {
+   "fieldname": "code",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Code"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-08-12 08:26:54.760056",
+ "modified_by": "Administrator",
+ "module": "Household Survey",
+ "name": "E05_List",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Savea Admin",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Savea User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "situation, code",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

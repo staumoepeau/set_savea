@@ -1,0 +1,82 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-05-30 13:55:31.433446",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "a_1",
+  "a_2",
+  "a_3",
+  "a_4",
+  "a_5",
+  "a_6",
+  "a_24",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "a_1",
+   "fieldtype": "Data",
+   "label": "Name of household member"
+  },
+  {
+   "fieldname": "a_2",
+   "fieldtype": "Select",
+   "label": "What is _________\u2019s relationship to the household head?   ",
+   "options": "\nHousehold head\nHusband/wife\nSon/daugther\nParents\nBrother/sister\nParents in law\nSon/daughter in law\nGrandparents\nGrandchild\nOther relative\nNon relative"
+  },
+  {
+   "fieldname": "a_3",
+   "fieldtype": "Select",
+   "label": "Person No (ID in column 1) of the member providing answers",
+   "options": "\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10"
+  },
+  {
+   "fieldname": "a_4",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "\nMale\nFemale"
+  },
+  {
+   "fieldname": "a_5",
+   "fieldtype": "Date",
+   "label": "Date of Birth"
+  },
+  {
+   "description": "Age in completed years\n",
+   "fieldname": "a_6",
+   "fieldtype": "Data",
+   "label": "Age"
+  },
+  {
+   "fieldname": "a_24",
+   "fieldtype": "Select",
+   "label": "Martial Status ",
+   "options": "Never married\nMarried\nDefacto\nSeparated\nDivorced\nWidowed"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Section A Household Roster",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-08-12 08:28:07.217347",
+ "modified_by": "Administrator",
+ "module": "Household Survey",
+ "name": "Section A Household Roster",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

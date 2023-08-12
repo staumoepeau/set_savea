@@ -1,0 +1,58 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-05-27 14:50:05.418408",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "age_group",
+  "gender",
+  "present",
+  "absent_for_6_months_and_above",
+  "total"
+ ],
+ "fields": [
+  {
+   "fieldname": "age_group",
+   "fieldtype": "Select",
+   "label": "Age group",
+   "options": "\nBelow 10\n10- 14\n15- 24\n25 and above"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "\nMale\nFemale"
+  },
+  {
+   "default": "0",
+   "fieldname": "present",
+   "fieldtype": "Check",
+   "label": "Present"
+  },
+  {
+   "default": "0",
+   "fieldname": "absent_for_6_months_and_above",
+   "fieldtype": "Check",
+   "label": "Absent for 6 months and above"
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Data",
+   "label": "Total"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-08-12 08:27:53.264390",
+ "modified_by": "Administrator",
+ "module": "Household Survey",
+ "name": "Number of family members",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

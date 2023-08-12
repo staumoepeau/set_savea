@@ -1,0 +1,56 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-06-03 01:36:22.421798",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "income_items",
+  "income_answer",
+  "amount_1_months",
+  "amount_12_months"
+ ],
+ "fields": [
+  {
+   "fieldname": "income_items",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Income Items",
+   "options": "\nCASH WAGE/SALARY FROM EMPLOYMENT\nAGRICULTURAL AND FORESTRY ACTIVITIES\nFISHING, GATHERING AND HUNTING ACTIVITIES\nLIVESTOCK AND AQUACULTURE ACTIVITIES\nHANDICRAFT AND HOME PROCESSED FOOD ACTIVITIES\nINCOME FROM NON-SUBSISTENCE BUSINESS\nPROPERTY INCOME\nTRANSFER INCOME"
+  },
+  {
+   "fieldname": "income_answer",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Any income from the following sources",
+   "options": "\nYES\nNO"
+  },
+  {
+   "fieldname": "amount_1_months",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Amount received the past 30 days",
+   "width": "150px"
+  },
+  {
+   "fieldname": "amount_12_months",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Amount received the past 12 months",
+   "width": "150px"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-08-12 08:28:27.416062",
+ "modified_by": "Administrator",
+ "module": "Household Survey",
+ "name": "Household Income",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
