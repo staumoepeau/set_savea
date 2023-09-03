@@ -1,0 +1,227 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:FORM-{MM}-{######}",
+ "creation": "2023-08-27 21:43:54.892253",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "foomu_savea",
+  "section_break_fqv16",
+  "report_date",
+  "kolo",
+  "column_break_va6pw",
+  "vahenga_fili",
+  "gender",
+  "section_break_ig7iz",
+  "q1",
+  "q3",
+  "q5",
+  "q7",
+  "q9",
+  "q11",
+  "q13",
+  "q15",
+  "column_break_ghbhs",
+  "q2",
+  "q4",
+  "q6",
+  "q8",
+  "q10",
+  "q12",
+  "q14",
+  "q16",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_fqv16",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "report_date",
+   "fieldtype": "Date",
+   "label": "Aho"
+  },
+  {
+   "fieldname": "kolo",
+   "fieldtype": "Data",
+   "label": "Kolo 'oku nofo ai"
+  },
+  {
+   "fieldname": "column_break_va6pw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "vahenga_fili",
+   "fieldtype": "Data",
+   "label": "Vahenga Fili"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "\nMALE\nFEMALE"
+  },
+  {
+   "fieldname": "section_break_ig7iz",
+   "fieldtype": "Section Break"
+  },
+  {
+   "description": "Na\u2019e mahino lelei e taumu\u2019a \u2018o e fakataha na\u2019e fakahoko.",
+   "fieldname": "q1",
+   "fieldtype": "Select",
+   "label": "Q1",
+   "options": "\n1\n2\n3\n4\n5"
+  },
+  {
+   "description": "Na\u2019e faka\u2019at\u0101 ki he kau ma\u2019u fakatah\u00e1 ke nau fakahoko mai \u2018enau ngaahi fakakauka\u00fa.",
+   "fieldname": "q2",
+   "fieldtype": "Select",
+   "label": "Q2",
+   "options": "\n1\n2\n3\n4\n5"
+  },
+  {
+   "fieldname": "column_break_ghbhs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "Ko e ngaahi kaveinga na\u2019e fai kiai e talatalano\u00e1 \u2018oku \u2018aonga kiate au.",
+   "fieldname": "q3",
+   "fieldtype": "Select",
+   "label": "Q3",
+   "options": "\n1\n2\n3\n4\n5"
+  },
+  {
+   "description": "Ko e ngaahi naunau na\u2019e tufa ma\u00ed na\u2019e tokoni lahi ki he\u2019eku mahino\u2019i e kaveing\u00e1.",
+   "fieldname": "q5",
+   "fieldtype": "Select",
+   "label": "Q5",
+   "options": "\n1\n2\n3\n4\n5"
+  },
+  {
+   "description": "\u2018Oku taukei \u2018aupito e kau ng\u0101ue he ngaahi fakamatala na\u2019a nau tuku mai.",
+   "fieldname": "q7",
+   "fieldtype": "Select",
+   "label": "Q7",
+   "options": "\n1\n2\n3\n4\n5"
+  },
+  {
+   "description": "Na\u2019e fe\u2019unga pe taim\u00ed, \u2018o \u2018ikai fu\u2019u l\u014dl\u014da pea \u2018ikai fu\u2019u nounou.",
+   "fieldname": "q9",
+   "fieldtype": "Select",
+   "label": "Q9",
+   "options": "\n1\n2\n3\n4\n5"
+  },
+  {
+   "description": "Na\u2019e t\u014dt\u014datu hono fokotu\u2019utu\u2019u \u2018etau fakatah\u00e1.",
+   "fieldname": "q11",
+   "fieldtype": "Select",
+   "label": "Q11",
+   "options": "\n1\n2\n3\n4\n5"
+  },
+  {
+   "description": "\u2018Oku \u2018i ai ha m\u0113mipa ho f\u0101mil\u00ed na\u2019e kau p\u0113 \u2018oku lolotonga kau he ma\u2019ung\u0101ue ki tu\u2019apule\u2019anga? ",
+   "fieldname": "q13",
+   "fieldtype": "Select",
+   "label": "Q13",
+   "options": "\n\u2018IO, \u2018oku lolotonga \u2018i tu\u2019apule\u2019anga\n\u2018IO, pea kuo \u2018ikai toe foki mai ia\n\u2018IO, ka \u2018oku \u2018osi foki mai\n\u2018IO, pea \u2018oku \u2018ikai toe fie kau ia he polokalama\n\u2018IKAI, te\u2019eki ma\u2019u ha faingamalie\n\u2018IKAI, pe ke fie kau ha taha ia"
+  },
+  {
+   "description": "\u2018Oku \u2018iai ha fa\u2019ahinga me\u2019a \u2018i hono fakalele e polokalam\u00e1 \u2018oku \u2018ikai keke fiemalie ai?",
+   "fieldname": "q15",
+   "fieldtype": "Select",
+   "label": "Q15",
+   "options": "\n'IO\n'IKAI"
+  },
+  {
+   "description": "Na\u2019e mahino \u2018a e founga na\u2019e fakahoko mai \u2018aki e ngaahi kaveinga na\u2019e talanoa\u2019\u00ed.",
+   "fieldname": "q4",
+   "fieldtype": "Select",
+   "label": "Q4",
+   "options": "\n1\n2\n3\n4\n5"
+  },
+  {
+   "description": "Ko e \u2018ilo kuo u ako he fakataha\u2019anga ni \u2018e tokoni lahi kiate au.",
+   "fieldname": "q6",
+   "fieldtype": "Select",
+   "label": "Q6",
+   "options": "\n1\n2\n3\n4\n5"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Stakeholder Engagement Evaluation Form",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "description": "Na\u2019e maa\u2019usia e taumu\u2019a \u2018o e fakataha\u2019anga ni.",
+   "fieldname": "q8",
+   "fieldtype": "Select",
+   "label": "Q8",
+   "options": "\n1\n2\n3\n4\n5"
+  },
+  {
+   "description": "Na\u2019e maa\u2019usia e taumu\u2019a \u2018o e fakataha\u2019anga ni.",
+   "fieldname": "q10",
+   "fieldtype": "Select",
+   "label": "Q10",
+   "options": "\n1\n2\n3\n4\n5"
+  },
+  {
+   "description": "\u2018Oku kau ha taha \u2018i homou \u2018api ki he Polokalama Totongi Ako \u2018a e SET Project a ia fakafou he Potungaue MIA (ki he fanau he ngaahi kolisi) mo e Potungaue Ako (ki he fanau ako he ngaahi Ako Tekinikale)?",
+   "fieldname": "q12",
+   "fieldtype": "Select",
+   "label": "Q12",
+   "options": "\n'IO\n'IKAI\nMAHALO PE"
+  },
+  {
+   "fieldname": "q14",
+   "fieldtype": "Select",
+   "label": "Q14",
+   "options": "\nLelei \u2018aupito ki he ngaahi famili\nLelei pe\nMalo pe tokoni ka \u2018oku lahi ange palopalema ia\nIkai ke sai ia ki he Tonga\nLahi \u2018aupito e palopalema ia"
+  },
+  {
+   "description": "Ko e h\u0101 e me'a mahu'inga taha na'a ke ako mei he polokalama 'o e 'aho ni? ",
+   "fieldname": "q16",
+   "fieldtype": "Small Text",
+   "label": "Q16"
+  },
+  {
+   "fieldname": "foomu_savea",
+   "fieldtype": "Heading",
+   "label": "Foomu Savea"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-08-28 06:00:50.558465",
+ "modified_by": "Administrator",
+ "module": "Savea",
+ "name": "Stakeholder Engagement Evaluation Form",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
