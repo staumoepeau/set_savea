@@ -1,0 +1,255 @@
+{
+ "actions": [],
+ "allow_events_in_timeline": 1,
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-08-12 08:42:07.716717",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "full_name",
+  "relationship",
+  "gender",
+  "dob",
+  "age",
+  "column_break_8",
+  "martial_status",
+  "occupation",
+  "education_status",
+  "school",
+  "education_level",
+  "location_section",
+  "division",
+  "district",
+  "column_break_8wx0s",
+  "village",
+  "section_break_dvqpp",
+  "entered_date",
+  "interview_start_date",
+  "column_break_pi5l1",
+  "interview_end_date",
+  "approval_section",
+  "approved_date",
+  "column_break_lgh3b",
+  "approve_status",
+  "household_id"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "1.########"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Name of household member"
+  },
+  {
+   "description": "What is your relationship to the household head?   ",
+   "fieldname": "relationship",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Relationship to the household head?   ",
+   "options": "Relationship to the household"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "in_filter": 1,
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Gender",
+   "options": "\nMale\nFemale"
+  },
+  {
+   "fieldname": "dob",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date of Birth"
+  },
+  {
+   "description": "Age in completed years\n",
+   "fieldname": "age",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Age"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "martial_status",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Martial Status ",
+   "options": "Martial Status"
+  },
+  {
+   "fieldname": "occupation",
+   "fieldtype": "Data",
+   "label": "Occupation"
+  },
+  {
+   "fieldname": "education_status",
+   "fieldtype": "Data",
+   "label": "Education Stauts"
+  },
+  {
+   "fieldname": "school",
+   "fieldtype": "Data",
+   "label": "School"
+  },
+  {
+   "fieldname": "education_level",
+   "fieldtype": "Data",
+   "label": "Education Level"
+  },
+  {
+   "fieldname": "location_section",
+   "fieldtype": "Tab Break",
+   "label": "Location"
+  },
+  {
+   "fieldname": "district",
+   "fieldtype": "Link",
+   "label": "District",
+   "options": "District"
+  },
+  {
+   "fieldname": "column_break_8wx0s",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "village",
+   "fieldtype": "Link",
+   "label": "Village",
+   "options": "Village"
+  },
+  {
+   "fieldname": "section_break_dvqpp",
+   "fieldtype": "Tab Break",
+   "label": "Entered/ Interview Date"
+  },
+  {
+   "fieldname": "entered_date",
+   "fieldtype": "Datetime",
+   "label": "Entered Date"
+  },
+  {
+   "fieldname": "interview_start_date",
+   "fieldtype": "Datetime",
+   "label": "Interview Start Date"
+  },
+  {
+   "fieldname": "column_break_pi5l1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "interview_end_date",
+   "fieldtype": "Datetime",
+   "label": "Interview End Date"
+  },
+  {
+   "fieldname": "approval_section",
+   "fieldtype": "Tab Break",
+   "label": "Approval"
+  },
+  {
+   "fieldname": "approved_date",
+   "fieldtype": "Data",
+   "label": "Approved Date"
+  },
+  {
+   "fieldname": "column_break_lgh3b",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "approve_status",
+   "fieldtype": "Select",
+   "label": "Approve Status",
+   "options": "\nYES\nNO"
+  },
+  {
+   "fieldname": "household_id",
+   "fieldtype": "Data",
+   "label": "Household ID"
+  },
+  {
+   "fieldname": "division",
+   "fieldtype": "Link",
+   "label": "Division",
+   "options": "Island Division"
+  }
+ ],
+ "hide_toolbar": 1,
+ "links": [],
+ "modified": "2023-09-05 07:13:22.229340",
+ "modified_by": "Administrator",
+ "module": "Savea",
+ "name": "Household Members",
+ "name_case": "Title Case",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Savea Admin",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Savea User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "full_name,gender,age",
+ "show_name_in_global_search": 1,
+ "show_preview_popup": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

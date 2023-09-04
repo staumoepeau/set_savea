@@ -1,0 +1,154 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2022-09-21 21:17:42.476402",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "members_id",
+  "full_name",
+  "relationship",
+  "gender",
+  "dob",
+  "age",
+  "column_break_8",
+  "martial_status",
+  "occupation",
+  "education_status",
+  "school",
+  "education_level",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "1.########"
+  },
+  {
+   "fieldname": "members_id",
+   "fieldtype": "Link",
+   "label": "Members ID",
+   "options": "Household Members"
+  },
+  {
+   "fetch_from": "members_id.full_name",
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Name of household member",
+   "read_only": 1
+  },
+  {
+   "description": "What is your relationship to the household head?   ",
+   "fetch_from": "members_id.relationship",
+   "fieldname": "relationship",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Relationship to the household head?   ",
+   "options": "Relationship to the household",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "members_id.gender",
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Gender",
+   "options": "\nMale\nFemale",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "members_id.dob",
+   "fieldname": "dob",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date of Birth",
+   "read_only": 1
+  },
+  {
+   "description": "Age in completed years\n",
+   "fetch_from": "members_id.age",
+   "fieldname": "age",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Age",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "members_id.martial_status",
+   "fieldname": "martial_status",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Martial Status ",
+   "options": "Martial Status",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "members_id.occupation",
+   "fieldname": "occupation",
+   "fieldtype": "Data",
+   "label": "Occupation",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "members_id.education_status",
+   "fieldname": "education_status",
+   "fieldtype": "Data",
+   "label": "Education Stauts",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "members_id.school",
+   "fieldname": "school",
+   "fieldtype": "Data",
+   "label": "School",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "members_id.education_level",
+   "fieldname": "education_level",
+   "fieldtype": "Data",
+   "label": "Education Level",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Household Members Table",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "is_submittable": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-09-04 14:21:27.453123",
+ "modified_by": "Administrator",
+ "module": "Savea",
+ "name": "Household Members Table",
+ "name_case": "Title Case",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [],
+ "show_name_in_global_search": 1,
+ "show_preview_popup": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
