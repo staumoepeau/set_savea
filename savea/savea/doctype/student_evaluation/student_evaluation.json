@@ -88,7 +88,7 @@
    "label": "SET Project Information"
   },
   {
-   "fetch_from": "member_id.entered_date",
+   "fetch_from": "member_id.martial_status",
    "fieldname": "martial_status",
    "fieldtype": "Link",
    "in_list_view": 1,
@@ -298,7 +298,7 @@
  ],
  "hide_toolbar": 1,
  "links": [],
- "modified": "2023-09-05 10:33:12.571354",
+ "modified": "2023-09-05 10:42:22.647413",
  "modified_by": "Administrator",
  "module": "Savea",
  "name": "Student Evaluation",
