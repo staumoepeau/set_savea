@@ -22,7 +22,21 @@
   "occupation",
   "education_status",
   "school",
-  "education_level"
+  "education_level",
+  "location_section",
+  "diivision",
+  "district",
+  "column_break_8wx0s",
+  "village",
+  "section_break_dvqpp",
+  "entered_date",
+  "interview_start_date",
+  "column_break_pi5l1",
+  "interview_end_date",
+  "approval_section",
+  "approved_date",
+  "column_break_lgh3b",
+  "approve_status"
  ],
  "fields": [
   {
@@ -115,11 +129,82 @@
    "label": "Household ID",
    "options": "Household",
    "read_only": 1
+  },
+  {
+   "fieldname": "diivision",
+   "fieldtype": "Link",
+   "label": "Diivision",
+   "options": "Island Division"
+  },
+  {
+   "fieldname": "district",
+   "fieldtype": "Link",
+   "label": "District",
+   "options": "District"
+  },
+  {
+   "fieldname": "village",
+   "fieldtype": "Link",
+   "label": "Village",
+   "options": "Village"
+  },
+  {
+   "fieldname": "location_section",
+   "fieldtype": "Tab Break",
+   "label": "Location"
+  },
+  {
+   "fieldname": "column_break_8wx0s",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_dvqpp",
+   "fieldtype": "Tab Break",
+   "label": "Entered/ Interview Date"
+  },
+  {
+   "fieldname": "entered_date",
+   "fieldtype": "Datetime",
+   "label": "Entered Date"
+  },
+  {
+   "fieldname": "interview_start_date",
+   "fieldtype": "Datetime",
+   "label": "Interview Start Date"
+  },
+  {
+   "fieldname": "column_break_pi5l1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "interview_end_date",
+   "fieldtype": "Datetime",
+   "label": "Interview End Date"
+  },
+  {
+   "fieldname": "approval_section",
+   "fieldtype": "Tab Break",
+   "label": "Approval"
+  },
+  {
+   "fieldname": "approved_date",
+   "fieldtype": "Data",
+   "label": "Approved Date"
+  },
+  {
+   "fieldname": "column_break_lgh3b",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "approve_status",
+   "fieldtype": "Select",
+   "label": "Approve Status",
+   "options": "\nYES\nNO"
   }
  ],
  "hide_toolbar": 1,
  "links": [],
- "modified": "2023-08-12 18:34:28.479599",
+ "modified": "2023-09-04 10:58:07.134985",
  "modified_by": "Administrator",
  "module": "Household Survey",
  "name": "Household Members",

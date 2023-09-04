@@ -1,0 +1,782 @@
+{
+ "actions": [],
+ "allow_events_in_timeline": 1,
+ "allow_import": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-09-04 13:48:33.110031",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "section_break_17",
+  "section_b",
+  "b_1",
+  "b_2",
+  "b_3",
+  "b_4",
+  "b_4_1",
+  "b_5",
+  "b_5_1",
+  "b_6",
+  "b_6_1",
+  "b_7",
+  "b_7_1",
+  "b_8",
+  "b_9",
+  "b_9_1",
+  "column_break_2",
+  "b_10",
+  "go_to_section_c",
+  "b_11",
+  "b11_1",
+  "b1_11_2",
+  "b11_2",
+  "b_12",
+  "b_13",
+  "b_14",
+  "b_15",
+  "b_15_1",
+  "b_16",
+  "b_16_1",
+  "section_c_education_and_training_section",
+  "section_c",
+  "c_1",
+  "c_2",
+  "column_break_35",
+  "c_3",
+  "section_c1",
+  "c_4",
+  "c_5",
+  "c_6",
+  "c_7",
+  "c_8",
+  "c_8_1",
+  "column_break_43",
+  "c_9",
+  "c_9_others",
+  "c_10",
+  "c_11",
+  "c_12",
+  "c_12_1",
+  "go_to_section_d",
+  "section_d",
+  "d_1",
+  "d_2",
+  "d_2_1",
+  "d_3",
+  "d_3_1",
+  "d_4",
+  "d_4_1",
+  "d_5",
+  "d_6",
+  "d_7",
+  "d_7_1",
+  "d_8",
+  "d_8_1",
+  "d_9",
+  "column_break_70",
+  "d_10",
+  "d_11",
+  "d_12",
+  "d_13",
+  "d_13_1",
+  "d_14",
+  "d_15",
+  "d_16",
+  "d_17",
+  "section_e",
+  "e_1",
+  "e_2",
+  "e_3",
+  "e_4",
+  "end_of_survey",
+  "column_break_68",
+  "e_5",
+  "e6",
+  "e_7",
+  "e_8",
+  "section_f",
+  "f_1",
+  "f_3",
+  "column_break_84",
+  "f_2"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "Q.YY.MM.####"
+  },
+  {
+   "fieldname": "section_break_17",
+   "fieldtype": "Section Break"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_b",
+   "fieldtype": "Tab Break",
+   "label": "Section B: Education and Training"
+  },
+  {
+   "fieldname": "b_1",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "B1 ?",
+   "options": "\n1= Currently attending\n2= Completed school\n3= Dropped out of school\n4= Never attended"
+  },
+  {
+   "fieldname": "b_2",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "B2 What type of living quater (main house) is this?",
+   "options": "\nOne house detached from any other house\nOne house attached to one or more houses\nBuilding with 2 or more apartments\nBuilding with 2 or more households sharing kitchen/ toilet\nBuilding attached to a business/ other non-resident building\nOther"
+  },
+  {
+   "fieldname": "b_3",
+   "fieldtype": "Select",
+   "label": "B03. Education Status",
+   "options": "\nCurrently attending\nCompleted school\nDropped out of school\nNever attended"
+  },
+  {
+   "depends_on": "eval:doc.b_3 == \"Currently attending\" && doc.b_3 == \"Completed school\" || doc.b_3 == \"Dropped out of school\"",
+   "fieldname": "b_4",
+   "fieldtype": "Select",
+   "label": "B04. What were the main reasons why you dropped out of school?",
+   "options": "\nNo school/ school is too far\nNot able to obtain school supplies and uniforms\nCould not get tuition fee\nNo dormitory available at school\nNot interested in school\nWorking to contribute to family income\nHelp at home with household chores\nBusy with animal husbandry\nFamily does not allow schooling\nIllness/ Disabled\nFamily Problem\nOthers",
+   "read_only_depends_on": "eval:doc.b_3 == \"Currently attending\";"
+  },
+  {
+   "depends_on": "eval:doc.b_4 == \"Others\"",
+   "fieldname": "b_4_1",
+   "fieldtype": "Data",
+   "label": "B04-1.Others",
+   "mandatory_depends_on": "eval:doc.b_4 == \"Others\""
+  },
+  {
+   "depends_on": "eval:doc.b_3 == \"Currently attending\" && doc.b_3 == \"Completed school\" || doc.b_3 == \"Dropped out of school\" || doc.b_3 == \"Never attended\"",
+   "fieldname": "b_5",
+   "fieldtype": "Select",
+   "label": "B05. What were the main reasons why you never attended school?",
+   "options": "\nNo school/ school is too far\nNot able to obtain school supplies and uniforms\nCould not get tuition fee\nNo dormitory available at school\nNot interested in school\nWorking to contribute to family income\nHelp at home with household chores\nBusy with animal husbandry\nFamily does not allow schooling\nIllness/ Disabled\nFamily Problem\nOthers",
+   "read_only_depends_on": "eval:doc.b_3 == \"Currently attending\""
+  },
+  {
+   "depends_on": "eval:doc.b_5 == \"Others\"",
+   "fieldname": "b_5_1",
+   "fieldtype": "Data",
+   "label": "B05-1.Others",
+   "mandatory_depends_on": "eval:doc.b_5 == \"Others\""
+  },
+  {
+   "depends_on": "eval:doc.b_3 == \"Currently attending\" || doc.b_3 != \"Completed school\"",
+   "fieldname": "b_6",
+   "fieldtype": "Select",
+   "label": "B06. What level/grade are you currently attending? ",
+   "options": "\nKindergarten/ Preschool\nClass 1\nClass 2\nClass 3\nClass 4\nClass 5\nClass 6\nForm 1\nForm 2\nForm 3\nForm 4\nForm 5\nForm 6\nForm 7\nTechnical/ vocational grade.\nUniversity/ High education grade.\nOthers"
+  },
+  {
+   "depends_on": "eval:doc.b_6 == \"Others\"",
+   "fieldname": "b_6_1",
+   "fieldtype": "Data",
+   "label": "B06-1.Others",
+   "mandatory_depends_on": "eval:doc.b_6 == \"Others\""
+  },
+  {
+   "depends_on": "eval:doc.b_3 == \"Currently attending\" || doc.b_3 == \"Completed school\" || doc.b_3 == \"Never attended\" || doc.b_3 == \"Dropped out of school\"",
+   "description": "            ",
+   "fieldname": "b_7",
+   "fieldtype": "Select",
+   "label": "B07. Type of School",
+   "options": "\nPublic School\nPrivate School\nOthers"
+  },
+  {
+   "depends_on": "eval:doc.b_7== \"Others\"",
+   "fieldname": "b_7_1",
+   "fieldtype": "Data",
+   "label": "B07-1.Others",
+   "mandatory_depends_on": "eval:doc.b_7== \"Others\""
+  },
+  {
+   "fieldname": "b_8",
+   "fieldtype": "Link",
+   "label": "B08. Name of School",
+   "options": "School"
+  },
+  {
+   "fieldname": "b_9",
+   "fieldtype": "Select",
+   "label": "B09. What is the highest educational level you completed?",
+   "options": "\nKindergarten/ Preschool\nClass 1\nClass 2\nClass 3\nClass 4\nClass 5\nClass 6\nForm 1\nForm 2\nForm 3\nForm 4\nForm 5\nForm 6\nForm 7\nTechnical/ vocational grade.\nUniversity/ High education grade.\nOthers"
+  },
+  {
+   "depends_on": "eval:doc.b_9== \"Others\"",
+   "fieldname": "b_9_1",
+   "fieldtype": "Data",
+   "label": "B09-1.Others",
+   "mandatory_depends_on": "eval:doc.b_9== \"Others\""
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "\n",
+   "fieldname": "b_10",
+   "fieldtype": "Select",
+   "label": "B10. Have you attended any vocational and technical training programs in the last three years?",
+   "options": "\nYes\nNo"
+  },
+  {
+   "bold": 1,
+   "default": "GO TO SECTION C",
+   "depends_on": "eval:doc.b_10 == \"No\"",
+   "fieldname": "go_to_section_c",
+   "fieldtype": "Data",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.b_10 == \"Yes\" || doc.b_10 != \"No\"                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ",
+   "fieldname": "b_11",
+   "fieldtype": "Select",
+   "label": "B11.What was the main subject of vocational training- i.e courses/programs?",
+   "mandatory_depends_on": "eval:doc.b_10 == \"Yes\" || doc.b_10 != \"No\"    ",
+   "options": "\nConstruction\nAged Care\nTourism & Hospitality\nMaritime\nAgriculture\nSecretarial\nSewing\nCookery\nFitting & Machinery, Welding, Automotive\nHairdressing\nOthers"
+  },
+  {
+   "bold": 1,
+   "depends_on": "eval:doc.b_11 == \"Construction\"",
+   "fieldname": "b11_1",
+   "fieldtype": "Select",
+   "label": "B11-1 Select ONE from the list below",
+   "mandatory_depends_on": "eval:doc.b_11 == \"Construction\"",
+   "options": "\nCarpentry\nElectrical\nPlumbing"
+  },
+  {
+   "depends_on": "eval:doc.b_11 == \"Fitting & Machinery, Welding, Automotive\"",
+   "fieldname": "b1_11_2",
+   "fieldtype": "Select",
+   "label": "B11-2 Select ONE from the list below",
+   "mandatory_depends_on": "eval:doc.b_11 == \"Fitting & Machinery, Welding, Automotive\"",
+   "options": "\nFitting\nMachinery\nWelding\nAutomotive"
+  },
+  {
+   "depends_on": "eval:doc.b_11== \"Others\"",
+   "fieldname": "b11_2",
+   "fieldtype": "Data",
+   "label": "B11-2.Others",
+   "mandatory_depends_on": "eval:doc.b_11 == \"Others\""
+  },
+  {
+   "depends_on": "eval:doc.b_10 == \"Yes\" || doc.b_10 != \"No\"     ",
+   "fieldname": "b_12",
+   "fieldtype": "Select",
+   "label": "B12. Does TSSF fund your courses or program?",
+   "mandatory_depends_on": "eval:doc.b_10 == \"Yes\" || doc.b_10 != \"No\"    ",
+   "options": "\nYes\nNo"
+  },
+  {
+   "depends_on": "eval:((doc.b_10 == \"Yes\" || doc.b_10 != \"No\") && (doc.b_12 == \"Yes\" || doc.b_12 != \"No\"))",
+   "fieldname": "b_13",
+   "fieldtype": "Select",
+   "label": "B13. How many following items does this household have?",
+   "mandatory_depends_on": "eval:doc.b_10 == \"Yes\" || doc.b_10 != \"No\"    ",
+   "options": "\n2019\n2020\n2021\n2022"
+  },
+  {
+   "depends_on": "eval:doc.b_10 == \"Yes\" || doc.b_10 != \"No\" || doc.b_12 == \"No\"",
+   "fieldname": "b_14",
+   "fieldtype": "Select",
+   "label": "B14. Were you a beneficiary of the Conditional Cash Transfer (CCT) program?",
+   "mandatory_depends_on": "eval:doc.b_10 == \"Yes\" || doc.b_10 != \"No\"    ",
+   "options": "\nYes\nNo\nDon\u2019t know"
+  },
+  {
+   "depends_on": "eval:doc.b_10 == \"Yes\" || doc.b_10 != \"No\"     ",
+   "fieldname": "b_15",
+   "fieldtype": "Select",
+   "label": "B15. During your course of TVET studies, did you change your TVET institution to another?",
+   "mandatory_depends_on": "eval:doc.b_10 == \"Yes\" || doc.b_10 != \"No\"    ",
+   "options": "\nYes\nNo"
+  },
+  {
+   "depends_on": "eval:doc.b_15 == \"Yes\"",
+   "fieldname": "b_15_1",
+   "fieldtype": "Data",
+   "label": "B15-1. Please explain why",
+   "mandatory_depends_on": "eval:doc.b_15 == \"Yes\""
+  },
+  {
+   "depends_on": "eval:doc.b_10 == \"Yes\" || doc.b_10 != \"No\"     ",
+   "fieldname": "b_16",
+   "fieldtype": "Select",
+   "label": "B16. Did you change program during your TVET course of studies?",
+   "mandatory_depends_on": "eval:doc.b_10 == \"Yes\" || doc.b_10 != \"No\"    ",
+   "options": "\nYes\nNo"
+  },
+  {
+   "depends_on": "eval:doc.b_16 == \"Yes\"",
+   "fieldname": "b_16_1",
+   "fieldtype": "Data",
+   "label": "B16-1. Please explain why",
+   "mandatory_depends_on": "eval:doc.b_16 == \"Yes\""
+  },
+  {
+   "fieldname": "section_c_education_and_training_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "collapsible": 1,
+   "description": "<b>For all household members aged 5 years and above</b><hr>",
+   "fieldname": "section_c",
+   "fieldtype": "Tab Break",
+   "label": "Section C: TVET Satisfaction"
+  },
+  {
+   "fieldname": "c_1",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "C01. Looking back, if you were free to choose again, to what extent would you probably choose the same field of study?",
+   "options": "\nNot at all\nMaybe not\nDon't know\nLikely\nVery Likely",
+   "reqd": 1
+  },
+  {
+   "fieldname": "c_2",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": " C02. Looking back, to what extent would you probably choose the same TVET institution if you were free to choose again?              ",
+   "options": "\nNot at all\nMaybe not\nDon't know\nLikely\nVery Likely",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_35",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "c_3",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "C03.  Looking back, to what extent are you generally satisfied with your studies?",
+   "options": "\nNo answer\nNot satisfactory\nModerately Satisfactory\nSatisfactory\nHighly satisfactory",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_c1",
+   "fieldtype": "Section Break",
+   "label": "Experience with the TSSF Program"
+  },
+  {
+   "fieldname": "c_4",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "C04. Did the schools receive their tuition fees on time?",
+   "options": "\nYes\nNo",
+   "reqd": 1
+  },
+  {
+   "fieldname": "c_5",
+   "fieldtype": "Select",
+   "label": "C05. Did you receive monthly OLA?",
+   "options": "\nYes\nNo",
+   "reqd": 1
+  },
+  {
+   "fieldname": "c_6",
+   "fieldtype": "Select",
+   "label": "C06. Did you receive your monthly OILA on time?",
+   "options": "\nYes\nNo",
+   "reqd": 1
+  },
+  {
+   "fieldname": "c_7",
+   "fieldtype": "Select",
+   "label": "C07. On an overall basis, are you satisfied with the TVET Student Support Fund?",
+   "options": "\nNo Answer\nUnsatisfactory\nModerately Satisfactory\nSatisfactory\nHighly Satisfactory",
+   "reqd": 1
+  },
+  {
+   "fieldname": "c_8",
+   "fieldtype": "Select",
+   "label": "C08.  Who received the fund?",
+   "options": "\nStudent\nParents\nGuardians living with\nOther"
+  },
+  {
+   "depends_on": "eval:doc.c_8 == \"Other\"",
+   "fieldname": "c_8_1",
+   "fieldtype": "Data",
+   "label": "C08-1.Other",
+   "mandatory_depends_on": "eval:doc.c_8 == \"Other\""
+  },
+  {
+   "fieldname": "column_break_43",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "c_9",
+   "fieldtype": "Select",
+   "label": "C09. What did they spend the money on?",
+   "options": "\nAccommodation\nFood\nEducation\nClothing\nHealth\nTransfer back to Family\nOthers (specify)\nDon't know"
+  },
+  {
+   "depends_on": "eval:doc.c_9 == \"Others (specify)\"",
+   "fieldname": "c_9_others",
+   "fieldtype": "Data",
+   "label": "C9-1.Others"
+  },
+  {
+   "depends_on": "eval:doc.c_9 == \"Transfer back to Family\"",
+   "fieldname": "c_10",
+   "fieldtype": "Data",
+   "label": "C10.  If transferred back to family, how much did they send back monthly?"
+  },
+  {
+   "depends_on": "eval:in_list([\"Accommodation\",\"Food\",\"Education\",\"Clothing\",\"Health\",\"Don't know\"], doc.c_9)",
+   "fieldname": "c_11",
+   "fieldtype": "Select",
+   "label": "C11. What is your status with TSSF?",
+   "options": "\nCurrently on TSSF\nHave completed TSSF\nHave dropped out from TSSF"
+  },
+  {
+   "depends_on": "eval:doc.c_11 == \"Have dropped out from TSSF\"",
+   "fieldname": "c_12",
+   "fieldtype": "Select",
+   "label": "C12. What is the main reason for dropping out of the program?",
+   "options": "\nNot interested in the program\nJoined another similar program\nWorking to contribute to family income\nHelp at home with household chores\nMigration\nIllness\nOthers (specify)"
+  },
+  {
+   "depends_on": "eval:doc.c_12 == \"Others (specify)\" ",
+   "fieldname": "c_12_1",
+   "fieldtype": "Data",
+   "label": "C12-1.Others"
+  },
+  {
+   "bold": 1,
+   "default": "GO TO SECTION D",
+   "depends_on": "eval:in_list([\"Currently on TSSF\",\"Have completed TSSF\"],doc.c_11)",
+   "fieldname": "go_to_section_d",
+   "fieldtype": "Data",
+   "read_only": 1
+  },
+  {
+   "collapsible": 1,
+   "description": "<b>Asked of persons aged 15+ years.</b>\n<hr>",
+   "fieldname": "section_d",
+   "fieldtype": "Tab Break",
+   "label": "Section D: Post-training employment experience"
+  },
+  {
+   "fieldname": "d_1",
+   "fieldtype": "Data",
+   "label": "D01. When did you graduate?",
+   "reqd": 1
+  },
+  {
+   "fieldname": "d_2",
+   "fieldtype": "Select",
+   "label": "D02. Which description applies to your situation in the first six months after graduating?",
+   "options": "\nFull-time employment\nPart-time employment\nSelf employed\nInternship\nContinued study or training\nHousewife, househusband, family work\nNot employed but searching for a job\nOther (please specify)"
+  },
+  {
+   "depends_on": "eval:doc.d_2 == \"Other (please specify)\"",
+   "fieldname": "d_2_1",
+   "fieldtype": "Data",
+   "label": "D02-1.Others",
+   "mandatory_depends_on": "eval:doc.d_2 == \"Other (please specify)\""
+  },
+  {
+   "depends_on": "eval:doc.d_2 == \"Continued study or training\"",
+   "fieldname": "d_3",
+   "fieldtype": "Select",
+   "label": "D03. Why did you decide to continue studying and not look for work?",
+   "options": "\nTSSF Program to continue paying fees\nMy parent\u2019s choice\nTo gain higher qualification\nStill want to be in school\nTo be with my friends\nOthers (please specify)"
+  },
+  {
+   "depends_on": "eval:doc.d_3 == \"Others (please specify)\"",
+   "fieldname": "d_3_1",
+   "fieldtype": "Data",
+   "label": "D03-1.Others",
+   "mandatory_depends_on": "eval:doc.d_3 == \"Others (please specify)\""
+  },
+  {
+   "depends_on": "eval:doc.d_3 != \"Continued study or training\"",
+   "description": "\n\n",
+   "fieldname": "d_4",
+   "fieldtype": "Select",
+   "label": "D04. Why did you choose not to continue studying?",
+   "options": "\nNo school/ school is too far,\nNot able to obtain school supplies and uniforms,\nCould not get tuition fee,\nNo dormitory available at school,\nNot interested in school,\nWorking to contribute to family income,\nHelp at home with household chores,\nBusy with animal husbandry,\nFamily does not allow schooling,\nIllness/ Disabled,\nFamily Problem\nOthers (specify)"
+  },
+  {
+   "depends_on": "eval:doc.d_4 == \"Others (specify)\"",
+   "fieldname": "d_4_1",
+   "fieldtype": "Data",
+   "label": "D04-1.Others",
+   "mandatory_depends_on": "eval:doc.d_4 == \"Others (specify)\""
+  },
+  {
+   "fieldname": "d_5",
+   "fieldtype": "Select",
+   "label": "D05. How many jobs (including your current one) have you had since graduation?",
+   "options": "\nNo job. I have not been employed since graduation\nOne job\nTwo jobs\nThree jobs\nMore than three jobs",
+   "reqd": 1
+  },
+  {
+   "fieldname": "d_6",
+   "fieldtype": "Select",
+   "label": "D06. When did you start your first full-time or part-time employment after graduation?",
+   "options": "\nBefore graduation\nAt the time of graduation\nLess than 1 month after graduation\n1 - 3 months after graduation\nMore than 3 - 6 months after graduation\nOver 6 months - 9 months after graduation\nOver 9 to - 12 months after graduation\nMore than one year after graduation\nI have not been employed since graduation"
+  },
+  {
+   "depends_on": "eval: in_list([\n\"Before graduation\",\n\"At the time of graduation\",\n\"Less than 1 month after graduation\",\n\"1 - 3 months after graduation\",\n\"More than 3 - 6 months after graduation\"], doc.d_6)",
+   "fieldname": "d_7",
+   "fieldtype": "Select",
+   "label": "D07. How did you manage to find a job quickly after graduation?",
+   "mandatory_depends_on": "eval: in_list([\n\"Before graduation\",\n\"At the time of graduation\",\n\"Less than 1 month after graduation\",\n\"1 - 3 months after graduation\",\n\"More than 3 - 6 months after graduation\"], doc.d_6)",
+   "options": "\nWorking at my work placement organization\nWorking at a family business\nInterviewed and get selected\nGood passing grades\nOthers (please specify)",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval:doc.d_7 == \"Others (please specify)\"",
+   "fieldname": "d_7_1",
+   "fieldtype": "Data",
+   "label": "D07-1.Others"
+  },
+  {
+   "fieldname": "d_8",
+   "fieldtype": "Select",
+   "label": "D08. Where was your first job located?",
+   "options": "\nLocal (divisional)\nOther Division in Tonga (other than local)\nInternational (please specify)",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval:doc.d_8 == \"International (please specify)\"",
+   "fieldname": "d_8_1",
+   "fieldtype": "Data",
+   "label": "D08-1. Please Specify",
+   "mandatory_depends_on": "eval:doc.d_8 == \"International (please specify)\""
+  },
+  {
+   "depends_on": "eval:doc.d_6 == \"I have not been employed since graduation\"",
+   "fieldname": "d_9",
+   "fieldtype": "Select",
+   "label": "D09. How long did it take to search for your job? Also include the job search period before graduation.",
+   "options": "\nLess than 1 month\nOver 1 month - 3 months\nOver 3 months - 6 months\nOver 6 months - 9 months\nOver 9 months - 12 months\nMore than one year",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_70",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "d_10",
+   "fieldtype": "Data",
+   "label": "D10. How much did you spend on securing your first job?",
+   "reqd": 1
+  },
+  {
+   "fieldname": "d_11",
+   "fieldtype": "Select",
+   "label": "D11. Did you get any assistance to access this employment opportunity?",
+   "options": "\nYes\nNo",
+   "reqd": 1
+  },
+  {
+   "fieldname": "d_12",
+   "fieldtype": "Select",
+   "label": "D12. To what extent are the knowledge and skills you acquired during study utilized in your current job?",
+   "options": "\nNot at all\nNot much\nSome\nA lot\nCompletely",
+   "reqd": 1
+  },
+  {
+   "fieldname": "d_13",
+   "fieldtype": "Select",
+   "label": "D13. Why were you unable to find a job after graduation?",
+   "options": "\nContinued studying\nHousework\nHealth issues\nTraining not appropriate for market demand\nOthers (specify)",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval:doc.e_13 == \"Others (specify)\"",
+   "fieldname": "d_13_1",
+   "fieldtype": "Data",
+   "label": "D13-1.Others",
+   "mandatory_depends_on": "eval:doc.e_13 == \"Others (specify)\""
+  },
+  {
+   "fieldname": "d_14",
+   "fieldtype": "Select",
+   "label": "D14. How many jobs interviewed have you taken but did not get the job?",
+   "options": "\n1\n2\n3\nMore than 3\nMore than 5\nOver 10",
+   "reqd": 1
+  },
+  {
+   "fieldname": "d_15",
+   "fieldtype": "Data",
+   "label": "D15. What are the most important types of assistance a TVET graduate would need when looking for a job?",
+   "reqd": 1
+  },
+  {
+   "fieldname": "d_16",
+   "fieldtype": "Data",
+   "label": "D16. What would be your one piece of advice to current TVET students?",
+   "reqd": 1
+  },
+  {
+   "fieldname": "d_17",
+   "fieldtype": "Data",
+   "label": "D17. How can the program be improved going forward? (please specify)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_e",
+   "fieldtype": "Tab Break",
+   "label": "Section E: Employment"
+  },
+  {
+   "fieldname": "e_1",
+   "fieldtype": "Select",
+   "label": "E01. What was your primary activity during the last 12 months?",
+   "options": "\nWork for pay (paid employment or in-kind payment)\nWork without income (unpaid work) and\nNot in the labour force"
+  },
+  {
+   "fieldname": "e_2",
+   "fieldtype": "Link",
+   "label": "E02. Which description applies to your situation in the last first 12 months?",
+   "options": "E02"
+  },
+  {
+   "depends_on": "eval: in_list([\n\"Employer\",\n\"Producing goods or services for sale/ Running a business\",\n\"Employee working for wages in the public sector\",\n\"Employee working for wages for a private sector\",\n\"Producing goods or services for own/family consumption\",\n\"Unpaid family worker (family business, plantation)\",\n\"Unpaid family worker (helps with essential household duties)\",\n\"Voluntary work/community work (for free)\"], doc.e_2)",
+   "fieldname": "e_3",
+   "fieldtype": "Select",
+   "label": "E03. Type of work (Occupation)?",
+   "options": "\nArmed forces\nLegislators, senior officials, and managers\nProfessionals\nTechnicians and associate professionals\nClerks\nService workers and shop and market sales workers\nSkilled agricultural and fishery workers\nCraft and related trades workers\nPlant and machine operators and assemblers\nElementary occupations"
+  },
+  {
+   "depends_on": "eval: in_list([\n\"Employer\",\n\"Producing goods or services for sale/ Running a business\",\n\"Employee working for wages in the public sector\",\n\"Employee working for wages for a private sector\",\n\"Producing goods or services for own/family consumption\",\n\"Unpaid family worker (family business, plantation)\",\n\"Unpaid family worker (helps with essential household duties)\",\n\"Voluntary work/community work (for free)\"], doc.e_2)",
+   "fieldname": "e_4",
+   "fieldtype": "Select",
+   "label": "E04. Which economic sector are you in?",
+   "options": "\nAgriculture\nManufacturing\nConstruction\nWholesale & retail trade; repair of motor vehicles and motorcycles\nTransportation and storage\nAccommodation & food service activities\nPublic administration & defense\nEducation\nHealth & social work activities\nOther service activities\nActivities of households as employers"
+  },
+  {
+   "bold": 1,
+   "default": "THANK YOU THAT THE END OF THE SURVEY",
+   "fieldname": "end_of_survey",
+   "fieldtype": "Data",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_68",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval: in_list([\n\"Employer\",\n\"Producing goods or services for sale/ Running a business\",\n\"Employee working for wages in the public sector\",\n\"Employee working for wages for a private sector\",\n\"Producing goods or services for own/family consumption\",\n\"Unpaid family worker (family business, plantation)\",\n\"Unpaid family worker (helps with essential household duties)\",\n\"Voluntary work/community work (for free)\"], doc.e_2)",
+   "fieldname": "e_5",
+   "fieldtype": "Link",
+   "label": "E05. Industry-specific",
+   "options": "E05_List",
+   "reqd": 1
+  },
+  {
+   "fieldname": "e6",
+   "fieldtype": "Table",
+   "label": "E06. How much did you earn",
+   "options": "Employment Earning"
+  },
+  {
+   "depends_on": "eval: in_list([\n\"Employer\",\n\"Producing goods or services for sale/ Running a business\",\n\"Employee working for wages in the public sector\",\n\"Employee working for wages for a private sector\",\n\"Producing goods or services for own/family consumption\",\n\"Unpaid family worker (family business, plantation)\",\n\"Unpaid family worker (helps with essential household duties)\",\n\"Voluntary work/community work (for free)\"], doc.e_2)",
+   "fieldname": "e_7",
+   "fieldtype": "Select",
+   "label": "E07. Did you work overseas in the last 12 months?",
+   "options": "\nYes\nNo"
+  },
+  {
+   "depends_on": "eval: in_list([\n\"Employer\",\n\"Producing goods or services for sale/ Running a business\",\n\"Employee working for wages in the public sector\",\n\"Employee working for wages for a private sector\",\n\"Producing goods or services for own/family consumption\",\n\"Unpaid family worker (family business, plantation)\",\n\"Unpaid family worker (helps with essential household duties)\",\n\"Voluntary work/community work (for free)\"], doc.e_2)",
+   "fieldname": "e_8",
+   "fieldtype": "Select",
+   "label": "E08. Country worked",
+   "options": "\nAustralia\nNew Zealand\nAmerica\nOther Pacific Island countries\nOthers"
+  },
+  {
+   "fieldname": "section_f",
+   "fieldtype": "Tab Break",
+   "label": "Section F: General Comments or FeedBack"
+  },
+  {
+   "fieldname": "f_1",
+   "fieldtype": "Select",
+   "label": "F01. Would you like this program to continue in the future?",
+   "options": "\nYes\nNo\nNo Answer"
+  },
+  {
+   "fieldname": "f_3",
+   "fieldtype": "Long Text",
+   "label": "F03. Any comment you would like to add to this survey or the SET Project overall?"
+  },
+  {
+   "fieldname": "column_break_84",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "f_2",
+   "fieldtype": "Select",
+   "label": "F02. Did participating in the SET Project encourage you or your siblings to stay in school?",
+   "options": "\nYes\nNo\nNo Answer"
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-09-04 13:49:27.172018",
+ "modified_by": "Administrator",
+ "module": "Savea",
+ "name": "Questions",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "import": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Savea Admin",
+   "select": 1,
+   "set_user_permissions": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Savea User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_name_in_global_search": 1,
+ "show_preview_popup": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
