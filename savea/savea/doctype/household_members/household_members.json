@@ -186,7 +186,7 @@
    "fieldname": "approve_status",
    "fieldtype": "Select",
    "label": "Approve Status",
-   "options": "\nYES\nNO"
+   "options": "\nYes\nNo"
   },
   {
    "fieldname": "household_id",
@@ -202,7 +202,7 @@
  ],
  "hide_toolbar": 1,
  "links": [],
- "modified": "2023-09-05 07:13:22.229340",
+ "modified": "2023-09-05 07:22:45.779433",
  "modified_by": "Administrator",
  "module": "Savea",
  "name": "Household Members",
