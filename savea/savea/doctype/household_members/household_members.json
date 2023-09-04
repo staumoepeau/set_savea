@@ -15,18 +15,28 @@
   "relationship",
   "gender",
   "dob",
-  "age",
   "column_break_8",
+  "household_id",
   "martial_status",
   "occupation",
-  "education_status",
-  "school",
-  "education_level",
+  "age",
   "location_section",
   "division",
+  "column_break_83ddx",
   "district",
   "column_break_8wx0s",
   "village",
+  "education_tab",
+  "education_status",
+  "school",
+  "column_break_kkrlv",
+  "education_level",
+  "compliance_status",
+  "section_break_df45l",
+  "absent_days",
+  "reporting_period",
+  "column_break_ncf7n",
+  "reason",
   "section_break_dvqpp",
   "entered_date",
   "interview_start_date",
@@ -35,8 +45,7 @@
   "approval_section",
   "approved_date",
   "column_break_lgh3b",
-  "approve_status",
-  "household_id"
+  "approve_status"
  ],
  "fields": [
   {
@@ -57,7 +66,6 @@
    "label": "Name of household member"
   },
   {
-   "description": "What is your relationship to the household head?   ",
    "fieldname": "relationship",
    "fieldtype": "Link",
    "in_filter": 1,
@@ -198,11 +206,54 @@
    "fieldtype": "Link",
    "label": "Division",
    "options": "Island Division"
+  },
+  {
+   "fieldname": "column_break_83ddx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "education_tab",
+   "fieldtype": "Tab Break",
+   "label": "Education"
+  },
+  {
+   "fieldname": "column_break_kkrlv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Yes",
+   "fieldname": "compliance_status",
+   "fieldtype": "Select",
+   "label": "Compliance Status",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "section_break_df45l",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "reporting_period",
+   "fieldtype": "Data",
+   "label": "Reporting Period"
+  },
+  {
+   "fieldname": "absent_days",
+   "fieldtype": "Data",
+   "label": "Absent Days"
+  },
+  {
+   "fieldname": "column_break_ncf7n",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "reason",
+   "fieldtype": "Data",
+   "label": "Reason"
   }
  ],
  "hide_toolbar": 1,
  "links": [],
- "modified": "2023-09-05 07:22:45.779433",
+ "modified": "2023-09-05 09:45:10.177636",
  "modified_by": "Administrator",
  "module": "Savea",
  "name": "Household Members",
@@ -249,7 +300,9 @@
  "search_fields": "full_name,gender,age",
  "show_name_in_global_search": 1,
  "show_preview_popup": 1,
+ "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "title_field": "full_name"
 }

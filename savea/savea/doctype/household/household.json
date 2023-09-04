@@ -10,6 +10,9 @@
  "field_order": [
   "identification_particulars",
   "naming_series",
+  "full_name",
+  "column_break_mrach",
+  "age",
   "region",
   "district",
   "column_break_1",
@@ -72,7 +75,8 @@
   },
   {
    "fieldname": "section_break_17",
-   "fieldtype": "Section Break"
+   "fieldtype": "Tab Break",
+   "label": "Members"
   },
   {
    "depends_on": "eval:!doc.istable",
@@ -82,12 +86,27 @@
    "in_standard_filter": 1,
    "label": "Household Members",
    "options": "Household Members Table"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Link",
+   "label": "Full Name",
+   "options": "Household Members"
+  },
+  {
+   "fieldname": "column_break_mrach",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "age",
+   "fieldtype": "Data",
+   "label": "Age"
   }
  ],
  "hide_toolbar": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-09-04 13:51:59.868653",
+ "modified": "2023-09-05 10:02:23.716428",
  "modified_by": "Administrator",
  "module": "Savea",
  "name": "Household",

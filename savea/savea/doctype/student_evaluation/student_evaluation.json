@@ -151,7 +151,7 @@
    "fieldtype": "Section Break"
   },
   {
-   "fetch_from": "member_id.diivision",
+   "fetch_from": "member_id.division",
    "fieldname": "island_division",
    "fieldtype": "Link",
    "label": "Island Division",
@@ -292,7 +292,7 @@
  ],
  "hide_toolbar": 1,
  "links": [],
- "modified": "2023-09-04 14:32:21.812847",
+ "modified": "2023-09-05 08:15:32.302148",
  "modified_by": "Administrator",
  "module": "Savea",
  "name": "Student Evaluation",
