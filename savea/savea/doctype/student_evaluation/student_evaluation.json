@@ -76,6 +76,7 @@
   },
   {
    "description": "Age in completed years\n",
+   "fetch_from": "member_id.age",
    "fieldname": "age",
    "fieldtype": "Data",
    "in_list_view": 1,
@@ -87,12 +88,13 @@
    "label": "SET Project Information"
   },
   {
+   "fetch_from": "member_id.entered_date",
    "fieldname": "martial_status",
    "fieldtype": "Link",
-   "hidden": 1,
    "in_list_view": 1,
    "label": "Martial Status ",
-   "options": "Martial Status"
+   "options": "Martial Status",
+   "read_only": 1
   },
   {
    "fetch_from": "member_id.school",
@@ -155,7 +157,8 @@
    "fieldname": "island_division",
    "fieldtype": "Link",
    "label": "Island Division",
-   "options": "Island Division"
+   "options": "Island Division",
+   "read_only": 1
   },
   {
    "fieldname": "column_break_9angl",
@@ -166,13 +169,16 @@
    "fieldname": "district",
    "fieldtype": "Link",
    "label": "District",
-   "options": "District"
+   "options": "District",
+   "read_only": 1
   },
   {
+   "fetch_from": "member_id.village",
    "fieldname": "village",
    "fieldtype": "Link",
    "label": "Village",
-   "options": "Village"
+   "options": "Village",
+   "read_only": 1
   },
   {
    "fieldname": "column_break_kciaa",
@@ -292,7 +298,7 @@
  ],
  "hide_toolbar": 1,
  "links": [],
- "modified": "2023-09-05 08:15:32.302148",
+ "modified": "2023-09-05 10:33:12.571354",
  "modified_by": "Administrator",
  "module": "Savea",
  "name": "Student Evaluation",

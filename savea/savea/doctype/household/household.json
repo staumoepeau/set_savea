@@ -8,11 +8,20 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "identification_particulars",
+  "household",
   "naming_series",
   "full_name",
   "column_break_mrach",
   "age",
+  "section_break_nclc8",
+  "member_count",
+  "total_calculated_score",
+  "column_break_wmv4h",
+  "rank_no",
+  "total_exponential_score",
+  "section_break_stbcu",
+  "created_date",
+  "tab_break_n5fp9",
   "region",
   "district",
   "column_break_1",
@@ -23,16 +32,11 @@
  ],
  "fields": [
   {
-   "fieldname": "identification_particulars",
-   "fieldtype": "Section Break",
-   "label": "IDENTIFICATION PARTICULARS"
-  },
-  {
    "fieldname": "naming_series",
    "fieldtype": "Select",
    "hidden": 1,
    "label": "Naming Series",
-   "options": "1.#######"
+   "options": "1.######"
   },
   {
    "fieldname": "region",
@@ -98,15 +102,63 @@
    "fieldtype": "Column Break"
   },
   {
+   "fetch_from": "full_name.age",
    "fieldname": "age",
    "fieldtype": "Data",
    "label": "Age"
+  },
+  {
+   "fieldname": "tab_break_n5fp9",
+   "fieldtype": "Tab Break",
+   "label": "Location"
+  },
+  {
+   "fieldname": "section_break_nclc8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "member_count",
+   "fieldtype": "Data",
+   "label": "Member Count"
+  },
+  {
+   "fieldname": "total_calculated_score",
+   "fieldtype": "Data",
+   "label": "Total Calculated Score"
+  },
+  {
+   "fieldname": "column_break_wmv4h",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "rank_no",
+   "fieldtype": "Data",
+   "label": "Rank No"
+  },
+  {
+   "fieldname": "total_exponential_score",
+   "fieldtype": "Data",
+   "label": "Total Exponential Score"
+  },
+  {
+   "fieldname": "section_break_stbcu",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "created_date",
+   "fieldtype": "Datetime",
+   "label": "Created Date"
+  },
+  {
+   "fieldname": "household",
+   "fieldtype": "Section Break",
+   "label": "Household"
   }
  ],
  "hide_toolbar": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-09-05 10:02:23.716428",
+ "modified": "2023-09-05 10:36:34.129262",
  "modified_by": "Administrator",
  "module": "Savea",
  "name": "Household",
@@ -152,10 +204,12 @@
    "write": 1
   }
  ],
- "search_fields": "region, district, village",
+ "search_fields": "full_name",
  "show_name_in_global_search": 1,
  "show_preview_popup": 1,
+ "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "title_field": "full_name"
 }
