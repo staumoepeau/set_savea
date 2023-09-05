@@ -156,7 +156,7 @@
    "label": "Household"
   },
   {
-   "fetch_from": "full_name.title",
+   "fetch_from": "full_name.membesrid",
    "fieldname": "member_id",
    "fieldtype": "Data",
    "label": "Member ID"
@@ -165,7 +165,7 @@
  "hide_toolbar": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-09-05 13:28:26.918852",
+ "modified": "2023-09-05 14:00:34.647312",
  "modified_by": "Administrator",
  "module": "Savea",
  "name": "Household",

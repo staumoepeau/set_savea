@@ -259,12 +259,13 @@
   {
    "fieldname": "membesrid",
    "fieldtype": "Data",
-   "label": "MembersID"
+   "label": "MembersID",
+   "read_only": 1
   }
  ],
  "hide_toolbar": 1,
  "links": [],
- "modified": "2023-09-05 13:47:49.055170",
+ "modified": "2023-09-05 14:01:25.476804",
  "modified_by": "Administrator",
  "module": "Savea",
  "name": "Household Members",
