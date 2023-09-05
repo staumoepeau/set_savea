@@ -5,4 +5,10 @@
 from frappe.model.document import Document
 
 class HouseholdMembers(Document):
-	pass
+
+
+	def validate(self):
+		self.update_id()
+	
+	def update_id(self):
+		self.membersid = self.name

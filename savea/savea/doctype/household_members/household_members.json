@@ -45,7 +45,9 @@
   "approval_section",
   "approved_date",
   "column_break_lgh3b",
-  "approve_status"
+  "approve_status",
+  "section_break_djtyx",
+  "membesrid"
  ],
  "fields": [
   {
@@ -249,11 +251,20 @@
    "fieldname": "reason",
    "fieldtype": "Data",
    "label": "Reason"
+  },
+  {
+   "fieldname": "section_break_djtyx",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "membesrid",
+   "fieldtype": "Data",
+   "label": "MembersID"
   }
  ],
  "hide_toolbar": 1,
  "links": [],
- "modified": "2023-09-05 09:45:10.177636",
+ "modified": "2023-09-05 13:47:49.055170",
  "modified_by": "Administrator",
  "module": "Savea",
  "name": "Household Members",
