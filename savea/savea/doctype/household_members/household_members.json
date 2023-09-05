@@ -33,10 +33,7 @@
   "education_level",
   "compliance_status",
   "section_break_df45l",
-  "absent_days",
-  "reporting_period",
-  "column_break_ncf7n",
-  "reason",
+  "attendance",
   "section_break_dvqpp",
   "entered_date",
   "interview_start_date",
@@ -234,25 +231,6 @@
    "fieldtype": "Section Break"
   },
   {
-   "fieldname": "reporting_period",
-   "fieldtype": "Data",
-   "label": "Reporting Period"
-  },
-  {
-   "fieldname": "absent_days",
-   "fieldtype": "Data",
-   "label": "Absent Days"
-  },
-  {
-   "fieldname": "column_break_ncf7n",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "reason",
-   "fieldtype": "Data",
-   "label": "Reason"
-  },
-  {
    "fieldname": "section_break_djtyx",
    "fieldtype": "Section Break"
   },
@@ -261,11 +239,17 @@
    "fieldtype": "Data",
    "label": "MembersID",
    "read_only": 1
+  },
+  {
+   "fieldname": "attendance",
+   "fieldtype": "Table",
+   "label": "Student Attendance",
+   "options": "Attendance"
   }
  ],
  "hide_toolbar": 1,
  "links": [],
- "modified": "2023-09-05 14:01:25.476804",
+ "modified": "2023-09-05 15:31:26.574031",
  "modified_by": "Administrator",
  "module": "Savea",
  "name": "Household Members",
