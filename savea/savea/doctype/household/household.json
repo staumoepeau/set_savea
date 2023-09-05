@@ -94,9 +94,8 @@
   },
   {
    "fieldname": "full_name",
-   "fieldtype": "Link",
-   "label": "Full Name",
-   "options": "Household Members"
+   "fieldtype": "Data",
+   "label": "Full Name"
   },
   {
    "fieldname": "column_break_mrach",
@@ -165,7 +164,7 @@
  "hide_toolbar": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-09-05 14:00:34.647312",
+ "modified": "2023-09-05 14:48:27.469523",
  "modified_by": "Administrator",
  "module": "Savea",
  "name": "Household",
