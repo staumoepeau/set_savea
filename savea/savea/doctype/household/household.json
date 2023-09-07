@@ -13,15 +13,14 @@
   "full_name",
   "column_break_mrach",
   "member_id",
-  "section_break_nclc8",
-  "age",
-  "member_count",
-  "total_calculated_score",
   "column_break_wmv4h",
+  "age",
+  "score_card_tab",
+  "total_calculated_score",
   "rank_no",
+  "column_break_wdalc",
   "total_exponential_score",
-  "section_break_stbcu",
-  "created_date",
+  "member_count",
   "tab_break_n5fp9",
   "region",
   "district",
@@ -29,7 +28,8 @@
   "village",
   "contact_telephone",
   "section_break_17",
-  "household_members"
+  "household_members",
+  "created_date"
  ],
  "fields": [
   {
@@ -81,7 +81,7 @@
   {
    "fieldname": "section_break_17",
    "fieldtype": "Tab Break",
-   "label": "Members"
+   "label": "MEMBERS"
   },
   {
    "depends_on": "eval:!doc.istable",
@@ -105,16 +105,17 @@
    "fetch_from": "full_name.age",
    "fieldname": "age",
    "fieldtype": "Data",
+   "in_filter": 1,
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
    "label": "Age"
   },
   {
    "fieldname": "tab_break_n5fp9",
    "fieldtype": "Tab Break",
-   "label": "Location"
-  },
-  {
-   "fieldname": "section_break_nclc8",
-   "fieldtype": "Section Break"
+   "label": "LOCATION"
   },
   {
    "fieldname": "member_count",
@@ -141,30 +142,36 @@
    "label": "Total Exponential Score"
   },
   {
-   "fieldname": "section_break_stbcu",
-   "fieldtype": "Section Break"
-  },
-  {
    "fieldname": "created_date",
    "fieldtype": "Datetime",
+   "hidden": 1,
    "label": "Created Date"
   },
   {
    "fieldname": "household",
-   "fieldtype": "Section Break",
-   "label": "Household"
+   "fieldtype": "Tab Break",
+   "label": "HOUSEHOLD"
   },
   {
    "fetch_from": "full_name.membesrid",
    "fieldname": "member_id",
    "fieldtype": "Data",
    "label": "Member ID"
+  },
+  {
+   "fieldname": "score_card_tab",
+   "fieldtype": "Tab Break",
+   "label": "SCORE CARD"
+  },
+  {
+   "fieldname": "column_break_wdalc",
+   "fieldtype": "Column Break"
   }
  ],
  "hide_toolbar": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-09-05 14:48:27.469523",
+ "modified": "2023-09-08 07:43:14.308674",
  "modified_by": "Administrator",
  "module": "Savea",
  "name": "Household",
