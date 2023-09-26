@@ -102,10 +102,8 @@
   {
    "fetch_from": "student_name.school",
    "fieldname": "school",
-   "fieldtype": "Link",
-   "label": "School",
-   "options": "School",
-   "read_only": 1
+   "fieldtype": "Data",
+   "label": "School"
   },
   {
    "fieldname": "student_name",
@@ -304,7 +302,7 @@
  ],
  "hide_toolbar": 1,
  "links": [],
- "modified": "2023-09-08 07:30:11.574600",
+ "modified": "2023-09-26 21:03:57.489788",
  "modified_by": "Administrator",
  "module": "Savea",
  "name": "Student Evaluation",
